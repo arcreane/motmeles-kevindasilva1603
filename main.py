@@ -32,3 +32,5 @@ def cord(mot,reponse,cordo_x,cordo_y):
             return True
         else:
             return False
+        
+        ##pas fini
