@@ -33,14 +33,14 @@ if Lvl == 'Facile':
         reponse.append(y)
         
 if Lvl == 'Moyen':
-    liste_mots = ["PATCHS","PYTHON","JAVA","ASCII"]
+    liste_mots = ["PATCH","JAVA","PYTHON","ASCI"]
     for mot in liste_mots:
         grille = add_mot(mot,grille)
         reponse.append(mot)
         reponse.append(x)
         reponse.append(y)
 if Lvl == 'Difficile':
-    liste_mots = ["JAVASCRIPT","VULNERABILITE","CYBERATTAQUE","ALGORITHMIE"]
+    liste_mots = ["Porto","Lisbonne","Paris","Madrid"]
     for mot in liste_mots:
         grille = add_mot(mot,grille)
         reponse.append(mot)
@@ -50,10 +50,12 @@ if Lvl == 'Difficile':
 mot=input("Rentrez le mot que vous avez trouvé: ")
 print(reponse)
 if mot(mot,liste_mots):
-     print("Le mot",mot,"est présent dans la liste.")
+     print("Le mot",mot,"est dans la liste.")
 else:
-    print("Le mot",mot,"n'est pas présent dans la liste, veuillez verifier votre mot")
+    print("Le mot",mot,"n'est pas dans la liste, veuillez verifier")
     exit()
 
 cordo_x=int(input("Rentrez la cordonnée x (horizontale): "))
 cordo_y=int(input("Rentrez la cordonnée y (verticale): "))
+
+##pas fini
